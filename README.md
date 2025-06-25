@@ -31,12 +31,12 @@ Built with:
 
 ## 📂 Project Structure
 
-codesense/
+codesense/\
 ├── app/ # Streamlit UI\
 ├── backend/ # Parser, Embedding, Search engine\
 ├── data/ # Raw code, processed chunks, embeddings\
 ├── scripts/ # Manual scripts for testing modules\
-└── README.md\
+└── README.md
 
 
 ---
