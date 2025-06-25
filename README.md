@@ -45,11 +45,13 @@ codesense/\
 
 ### 1. Clone & Setup
 ```bash
-git clone https://github.com/<your-username>/codesense.git
+git clone https://github.com/NoxiousTab/codesense.git
 cd codesense
 python -m venv venv
 venv\Scripts\activate    # or source venv/bin/activate on Unix
+(Only If Required) pip install tree_sitter-0.20.4-cp310-cp310-win_amd64.whl
 pip install -r requirements.txt
+python backend/parser/build_language.py # to build my-languages.so
 ```
 
 ### 2. Clone Repos to Analyze
