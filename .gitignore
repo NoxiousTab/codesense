@@ -2,7 +2,6 @@ __pycache__/
 *.py[cod]
 venv/
 .env
-.streamlit/
 .cache/
 data/raw_code/
 data/processed_chunks/
