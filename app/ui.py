@@ -4,6 +4,14 @@ import sys
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 from backend.search.search_engine import CodeSearchEngine
 
+'''st.set_page_config(
+    page_title="Codesense - A semantic code search engine",
+    page_icon="🧠",
+    layout="wide"
+)'''
+
+
+
 
 @st.cache_resource
 def load_engine():
