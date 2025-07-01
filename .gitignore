@@ -5,8 +5,8 @@ venv/
 .streamlit/
 .cache/
 *.jsonl
-data/raw_code/
-data/processed_chunks/
-data/embeddings/
+#data/raw_code/
+#data/processed_chunks/
+#data/embeddings/
 .vscode/
 *.log

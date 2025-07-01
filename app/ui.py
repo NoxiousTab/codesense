@@ -17,7 +17,7 @@ def load_engine():
 
 engine = load_engine()
 
-query = st.text_input("Search your codebase...", placeholder="e.g., connect to database, handle API request")
+query = st.text_input("Search your codebase...", placeholder="e.g., floyd warshall algorithm in python, binary exponentiation")
 
 if query:
     with st.spinner("Searching..."):
