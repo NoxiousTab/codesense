@@ -1,16 +1,14 @@
 import streamlit as st
+
+st.set_page_config(page_title="CodeSense", layout="wide")
+st.title("🔍 CodeSense — Semantic Code Search")
+
+
+
 import os
 import sys
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 from backend.search.search_engine import CodeSearchEngine
-
-'''st.set_page_config(
-    page_title="Codesense - A semantic code search engine",
-    page_icon="🧠",
-    layout="wide"
-)'''
-
-
 
 
 @st.cache_resource
@@ -18,9 +16,6 @@ def load_engine():
     return CodeSearchEngine("data/embeddings")
 
 engine = load_engine()
-
-st.set_page_config(page_title="CodeSense", layout="wide")
-st.title("🔍 CodeSense — Semantic Code Search")
 
 query = st.text_input("Search your codebase...", placeholder="e.g., connect to database, handle API request")
 
